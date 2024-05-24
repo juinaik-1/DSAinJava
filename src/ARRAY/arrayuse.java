@@ -1,3 +1,5 @@
+//package ARRAY;
+
 import java.util.*;
 
 public class arrayuse {
@@ -51,6 +53,22 @@ public class arrayuse {
         }
         return result;
     }
+
+    //reverse an array 
+    public static void reverse(int arr[]){
+        int n = arr.length;
+        int temp;
+        for(int i =0; i< n/2;i++){
+            temp = arr[i];
+            arr[i]= arr[n-i-1];
+            arr[n-i-1] = temp;
+        }
+        System.out.println("Reversed array is: \n"); 
+        for (int k = 0; k < n; k++) { 
+            System.out.print(arr[k] + " "); 
+        } 
+
+    }
     public static void main(String[] args) {
         int arr []=takeinput();
         print(arr);
@@ -61,5 +79,6 @@ public class arrayuse {
         System.out.println("type number you want to search: ");
         int x = s.nextInt();
         System.out.println(findEle(arr,x ));
+        reverse(arr);
     }
 }

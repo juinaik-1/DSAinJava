@@ -1,3 +1,5 @@
+package BASICS;
+
 import java.util.Scanner;
 //random chutiyap
 public class jui {

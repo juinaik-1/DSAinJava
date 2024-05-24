@@ -1,3 +1,5 @@
+package BASICS;
+
 import java.util.Scanner;
 public class bin2dec {
 public static long bin2dec(int n)
